@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Remote Interview Platform  
 
-## Getting Started
+A feature-rich remote interview platform built to streamline virtual hiring. Designed with cutting-edge technologies, it ensures seamless communication and intuitive functionalities for both candidates and interviewers.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack  
+- **Framework**: Next.js 15  
+- **Language**: TypeScript  
+- **Video & Communication**: Stream  
+- **Database**: Convex  
+- **Authentication**: Clerk  
+- **Styling**: Tailwind CSS & Shadcn  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Key Features  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📹 Core Functionalities  
+- **Video Calls**: High-quality, real-time video communication.  
+- **Screen Sharing**: Collaborate effectively by sharing your screen.  
+- **Screen Recording**: Save and review interviews anytime.  
+- **Authentication**: Secure and reliable user login with roles.
 
-## Learn More
+### 🛠️ Development Features  
+- **Server Components**: Enhance performance with server-rendered content.  
+- **Dynamic & Static Routes**: Navigate with optimized routing.  
+- **Server Actions**: Seamless backend logic integration using TypeScript & Convex.  
 
-To learn more about Next.js, take a look at the following resources:
+### ✨ User Experience  
+- **Tailwind & Shadcn**: Elegant, responsive, and modern UI design.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🖼️ Screenshots  
 
-## Deploy on Vercel
+![Video Call Preview](https://via.placeholder.com/800x400)  
+_Example of a video call interface._
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Dashboard](https://via.placeholder.com/800x400)  
+_Overview of the dashboard for managing interviews._  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Getting Started  
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository**:  
+   ```bash
+   git clone https://github.com/your-username/remote-interview-platform.git
+   cd remote-interview-platform
