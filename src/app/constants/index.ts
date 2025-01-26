@@ -59,6 +59,7 @@ export const QUICK_ACTIONS = [
 ];
 
 export const CODING_QUESTIONS: CodeQuestion[] = [
+  // Previous questions
   {
     id: "two-sum",
     title: "Two Sum",
@@ -69,10 +70,6 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         input: "nums = [2,7,11,15], target = 9",
         output: "[0,1]",
         explanation: "Because nums[0] + nums[1] == 9, we return [0, 1]",
-      },
-      {
-        input: "nums = [3,2,4], target = 6",
-        output: "[1,2]",
       },
     ],
     starterCode: {
@@ -89,12 +86,23 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      rust: `fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    // Write your solution here
+    vec![]
+}`,
+      golang: `func twoSum(nums []int, target int) []int {
+    // Write your solution here
+    return []int{}
+}`,
+      c: `int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+    // Write your solution here
+    return NULL;
+}`,
     },
     constraints: [
       "2 ≤ nums.length ≤ 104",
       "-109 ≤ nums[i] ≤ 109",
       "-109 ≤ target ≤ 109",
-      "Only one valid answer exists.",
     ],
   },
   {
@@ -106,10 +114,6 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
       {
         input: 's = ["h","e","l","l","o"]',
         output: '["o","l","l","e","h"]',
-      },
-      {
-        input: 's = ["H","a","n","n","a","h"]',
-        output: '["h","a","n","n","a","H"]',
       },
     ],
     starterCode: {
@@ -126,6 +130,15 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      rust: `fn reverse_string(s: &mut Vec<char>) {
+    // Write your solution here
+}`,
+      golang: `func reverseString(s []byte) {
+    // Write your solution here
+}`,
+      c: `void reverseString(char* s, int sSize) {
+    // Write your solution here
+}`,
     },
   },
   {
@@ -138,12 +151,6 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         input: "x = 121",
         output: "true",
         explanation: "121 reads as 121 from left to right and from right to left.",
-      },
-      {
-        input: "x = -121",
-        output: "false",
-        explanation:
-          "From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.",
       },
     ],
     starterCode: {
@@ -160,14 +167,146 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      rust: `fn is_palindrome(x: i32) -> bool {
+    // Write your solution here
+    false
+}`,
+      golang: `func isPalindrome(x int) bool {
+    // Write your solution here
+    return false
+}`,
+      c: `bool isPalindrome(int x) {
+    // Write your solution here
+    return false;
+}`,
+    },
+  },
+  {
+    id: "merge-sorted-array",
+    title: "Merge Sorted Array",
+    description:
+      "You are given two integer arrays `nums1` and `nums2`, sorted in non-decreasing order, and two integers `m` and `n` representing the number of elements in `nums1` and `nums2`, respectively. Merge `nums2` into `nums1` as one sorted array.",
+    examples: [
+      {
+        input: "nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3",
+        output: "[1,2,2,3,5,6]",
+      },
+    ],
+    starterCode: {
+      javascript: `function merge(nums1, m, nums2, n) {
+  // Write your solution here
+  
+}`,
+      python: `def merge(nums1, m, nums2, n):
+    # Write your solution here
+    pass`,
+      java: `class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        // Write your solution here
+        
+    }
+}`,
+      rust: `fn merge(nums1: &mut Vec<i32>, m: usize, nums2: &Vec<i32>, n: usize) {
+    // Write your solution here
+}`,
+      golang: `func merge(nums1 []int, m int, nums2 []int, n int) {
+    // Write your solution here
+}`,
+      c: `void merge(int* nums1, int m, int* nums2, int n) {
+    // Write your solution here
+}`,
+    },
+  },
+  {
+    id: "remove-duplicates",
+    title: "Remove Duplicates from Sorted Array",
+    description:
+      "Given an integer array `nums` sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.",
+    examples: [
+      {
+        input: "nums = [1,1,2]",
+        output: "[1,2]",
+        explanation: "Your function should modify the input array in place.",
+      },
+    ],
+    starterCode: {
+      javascript: `function removeDuplicates(nums) {
+  // Write your solution here
+  
+}`,
+      python: `def remove_duplicates(nums):
+    # Write your solution here
+    pass`,
+      java: `class Solution {
+    public int removeDuplicates(int[] nums) {
+        // Write your solution here
+        return 0;
+    }
+}`,
+      rust: `fn remove_duplicates(nums: &mut Vec<i32>) -> usize {
+    // Write your solution here
+    0
+}`,
+      golang: `func removeDuplicates(nums []int) int {
+    // Write your solution here
+    return 0
+}`,
+      c: `int removeDuplicates(int* nums, int numsSize) {
+    // Write your solution here
+    return 0;
+}`,
+    },
+  },
+  {
+    id: "climbing-stairs",
+    title: "Climbing Stairs",
+    description:
+      "You are climbing a staircase. It takes `n` steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+    examples: [
+      {
+        input: "n = 2",
+        output: "2",
+        explanation: "There are two ways to climb to the top: 1+1 and 2.",
+      },
+    ],
+    starterCode: {
+      javascript: `function climbStairs(n) {
+  // Write your solution here
+  
+}`,
+      python: `def climb_stairs(n):
+    # Write your solution here
+    pass`,
+      java: `class Solution {
+    public int climbStairs(int n) {
+        // Write your solution here
+        return 0;
+    }
+}`,
+      rust: `fn climb_stairs(n: i32) -> i32 {
+    // Write your solution here
+    0
+}`,
+      golang: `func climbStairs(n int) int {
+    // Write your solution here
+    return 0
+}`,
+      c: `int climbStairs(int n) {
+    // Write your solution here
+    return 0;
+}`,
     },
   },
 ];
+
 
 export const LANGUAGES = [
   { id: "javascript", name: "JavaScript", icon: "/javascript.png" },
   { id: "python", name: "Python", icon: "/python.png" },
   { id: "java", name: "Java", icon: "/java.png" },
+  { id: "golang", name: "Golang", icon: "/golang.png" },
+  { id: "c", name: "C++", icon: "/c++.png" },
+  { id: "rust", name: "Rust", icon: "/rust.png" },
 ] as const;
 
 export interface CodeQuestion {
@@ -183,8 +322,10 @@ export interface CodeQuestion {
     javascript: string;
     python: string;
     java: string;
+    rust: string;
+    golang: string;
+    c: string;
   };
   constraints?: string[];
 }
-
 export type QuickActionType = (typeof QUICK_ACTIONS)[number];
